@@ -1,7 +1,12 @@
 function InputNumber(){
     return(
   
-            <input type="Number" placeholder="Enter a number"></input>
+            <input 
+            type="Number" 
+            placeholder="Enter a number">
+           
+
+            </input>
 
            
    

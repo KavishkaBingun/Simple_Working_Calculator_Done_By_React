@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import AddBtn from './components/AddBtn';
+import DivisionBtn from './components/DivisionBtn';
+import InputNumber from './components/InputNumber';
+import MultiplyBtn from './components/MultiplyBtn';
+import ResetResult from './components/ResetResult';
+import SubstractBtn from './components/SubstractBtn';
+import ResetInput from './components/ResetInput';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div >
+      <form className="App">
+      <h1>Do your calculations here</h1>
+
+<InputNumber/>
+<div className='column'>
+<AddBtn/>
+<SubstractBtn/>
+</div>
+<div className='row'>
+<MultiplyBtn/>
+<DivisionBtn/>
+</div>
+<div id='reset'>
+<ResetResult/>
+<ResetInput/>
+
+</div>
+
+
+</form>
+</div>
   );
 }
 
